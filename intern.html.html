@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InternHub</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+  <header class="header">
+   <h1>InternHub</h1>
+   <p>Find and apply for remote internship opportunities</p>
+  </header>
+
+  <div id="internship-list" class="cards"></div>
+  <div id="form-section" class="hidden">
+
+  <h2>Apply for Internship</h2>
+
+    <form onsubmit="submitForm(event)">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="role" readonly>
+
+      <button type="submit">Submit</button>
+      <button type="button" onclick="closeForm()">Cancel</button>
+    </form>
+  </div>
+  <script src="script1.js"></script>
+</body>
+</html>
